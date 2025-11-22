@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parinidhi Fashion | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body data-page="home" class="bg-white text-zinc-900">
+  <!-- Top Bar -->
+  <div class="bg-black text-amber-400 text-xs text-center py-2 px-4 tracking-[0.2em] uppercase">
+    Free Shipping on Orders Above ₹1499 | Festive Sale Live Now!
+  </div>
+
+  <!-- Navbar -->
+  <header class="border-b border-zinc-100 sticky top-0 bg-white z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="cursor-pointer">
+        <h1 class="text-2xl sm:text-3xl font-serif font-bold tracking-[0.25em]">
+          PARINIDHI <span class="text-amber-600">FASHION</span>
+        </h1>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide uppercase">
+        <a href="index.html" class="text-amber-600">Home</a>
+        <a href="shop.html" class="hover:text-amber-600">Shop</a>
+        <a href="contact.html" class="hover:text-amber-600">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <input
+          id="search-home"
+          type="text"
+          placeholder="Search products..."
+          class="text-sm border-b border-zinc-300 focus:border-black outline-none px-1 py-1 w-40 focus:w-56 transition-all"
+        />
+        <a href="cart.html" class="relative hover:text-amber-600">
+          🛍
+          <span id="cart-count-home" class="hidden absolute -top-2 -right-2 text-[10px] bg-black text-white w-4 h-4 rounded-full flex items-center justify-center"></span>
+        </a>
+      </div>
+
+      <!-- Mobile menu icon -->
+      <button id="mobile-menu-toggle" class="md:hidden text-2xl">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden border-t border-zinc-100 px-4 pb-4 space-y-3 bg-white">
+      <a href="index.html" class="block text-sm font-medium">Home</a>
+      <a href="shop.html" class="block text-sm font-medium">Shop</a>
+      <a href="contact.html" class="block text-sm font-medium">Contact</a>
+      <a href="cart.html" class="block text-sm font-medium">Cart</a>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <!-- Hero -->
+    <section class="relative h-[520px] flex items-center justify-center overflow-hidden">
+      <img
+        src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=2000"
+        alt="Fashion Banner"
+        class="absolute inset-0 w-full h-full object-cover opacity-70"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+
+      <div class="relative z-10 text-center text-white px-4 max-w-3xl animate-fade-in">
+        <p class="text-amber-300 uppercase tracking-[0.35em] text-xs sm:text-sm mb-4">
+          New Collection 2024
+        </p>
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 leading-tight">
+          Elegance <span class="italic font-light">Re-defined</span>
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-zinc-100 mb-8">
+          Discover curated ethnic & contemporary pieces crafted for the modern woman.
+        </p>
+        <a
+          href="shop.html"
+          class="inline-flex items-center justify-center px-8 py-3 text-sm font-medium bg-amber-600 hover:bg-amber-700 text-white rounded-sm tracking-wide transition"
+        >
+          Shop Collection →
+        </a>
+      </div>
+    </section>
+
+    <!-- Features strip -->
+    <section class="border-y border-zinc-100 bg-white">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 py-8 px-4 text-sm text-zinc-700">
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-xl">🚚</span>
+          <div>
+            <p class="font-semibold text-sm text-black">Free Shipping</p>
+            <p class="text-xs text-zinc-500">On orders above ₹1499</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-xl">🛡</span>
+          <div>
+            <p class="font-semibold text-sm text-black">Secure Payments</p>
+            <p class="text-xs text-zinc-500">100% safe checkout</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-xl">📦</span>
+          <div>
+            <p class="font-semibold text-sm text-black">Easy Returns</p>
+            <p class="text-xs text-zinc-500">7-day return policy</p>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-3">
+          <span class="text-xl">💬</span>
+          <div>
+            <p class="font-semibold text-sm text-black">WhatsApp Support</p>
+            <p class="text-xs text-zinc-500">Quick customer care</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-14 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-serif mb-2 tracking-wide">Shop by Category</h2>
+          <p class="text-sm text-zinc-500 italic">Find your look for every mood & occasion.</p>
+          <div class="w-16 h-[2px] bg-amber-600 mx-auto mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+          <!-- categories are just visual, real filtering is on shop page -->
+          <a href="shop.html?category=Ethnic%20Wear" class="group text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full border border-zinc-200 flex items-center justify-center text-xs text-zinc-400 group-hover:border-amber-600 transition">
+              Ethnic
+            </div>
+            <p class="mt-3 text-sm font-medium group-hover:text-amber-600">Ethnic Wear</p>
+          </a>
+          <a href="shop.html?category=Western%20Wear" class="group text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full border border-zinc-200 flex items-center justify-center text-xs text-zinc-400 group-hover:border-amber-600 transition">
+              Western
+            </div>
+            <p class="mt-3 text-sm font-medium group-hover:text-amber-600">Western Wear</p>
+          </a>
+          <a href="shop.html?category=Sarees" class="group text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full border border-zinc-200 flex items-center justify-center text-xs text-zinc-400 group-hover:border-amber-600 transition">
+              Sarees
+            </div>
+            <p class="mt-3 text-sm font-medium group-hover:text-amber-600">Sarees</p>
+          </a>
+          <a href="shop.html?category=Kurtis" class="group text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full border border-zinc-200 flex items-center justify-center text-xs text-zinc-400 group-hover:border-amber-600 transition">
+              Kurtis
+            </div>
+            <p class="mt-3 text-sm font-medium group-hover:text-amber-600">Kurtis</p>
+          </a>
+          <a href="shop.html?category=Dresses" class="group text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full border border-zinc-200 flex items-center justify-center text-xs text-zinc-400 group-hover:border-amber-600 transition">
+              Dresses
+            </div>
+            <p class="mt-3 text-sm font-medium group-hover:text-amber-600">Dresses</p>
+          </a>
+          <a href="shop.html?category=Accessories" class="group text-center">
+            <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full border border-zinc-200 flex items-center justify-center text-xs text-zinc-400 group-hover:border-amber-600 transition">
+              Acc.
+            </div>
+            <p class="mt-3 text-sm font-medium group-hover:text-amber-600">Accessories</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending products (filled by JS) -->
+    <section class="py-14 bg-zinc-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-4xl font-serif mb-2 tracking-wide">Trending Now</h2>
+          <p class="text-sm text-zinc-500 italic">Handpicked favourites from Parinidhi Fashion.</p>
+          <div class="w-16 h-[2px] bg-amber-600 mx-auto mt-4"></div>
+        </div>
+
+        <div id="trending-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <!-- JS will inject product cards -->
+        </div>
+
+        <div class="text-center mt-10">
+          <a
+            href="shop.html"
+            class="inline-flex items-center justify-center px-6 py-2 border border-zinc-300 text-sm uppercase tracking-wide hover:border-black transition"
+          >
+            View All Products
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA banner -->
+    <section class="py-16 bg-amber-600 text-white text-center px-4">
+      <h2 class="text-3xl md:text-4xl font-serif mb-3">Festive Sale is Live</h2>
+      <p class="mb-6 text-sm md:text-base">
+        Flat 30% OFF on selected Ethnic Wear. Use code <span class="font-semibold">FESTIVE30</span> at checkout.
+      </p>
+      <a href="shop.html" class="inline-flex px-8 py-3 bg-white text-black text-sm font-medium tracking-wide uppercase hover:bg-zinc-100">
+        Shop the Sale
+      </a>
+    </section>
+  </main>
+
+  <!-- WhatsApp floating button -->
+  <a
+    href="https://wa.me/919876543210"
+    target="_blank"
+    rel="noreferrer"
+    class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 text-sm"
+  >
+    <span>💬</span>
+    <span class="hidden sm:inline font-semibold tracking-wide text-xs">Chat on WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white pt-10 pb-6 mt-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+      <div>
+        <h3 class="text-xl font-serif font-semibold text-amber-400 mb-2">Parinidhi Fashion</h3>
+        <p class="text-zinc-400 text-xs leading-relaxed">
+          A curated boutique of ethnic, fusion & western styles crafted for every Indian woman.
+        </p>
+      </div>
+      <div>
+        <h4 class="text-amber-400 mb-3 font-semibold text-sm uppercase tracking-wide">Explore</h4>
+        <ul class="space-y-2 text-zinc-400 text-xs">
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="shop.html" class="hover:text-white">New Arrivals</a></li>
+          <li><a href="shop.html" class="hover:text-white">Best Sellers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-amber-400 mb-3 font-semibold text-sm uppercase tracking-wide">Support</h4>
+        <ul class="space-y-2 text-zinc-400 text-xs">
+          <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          <li>Shipping & Returns</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-amber-400 mb-3 font-semibold text-sm uppercase tracking-wide">Stay in touch</h4>
+        <p class="text-xs text-zinc-400 mb-2">Get updates on new drops & offers.</p>
+        <input
+          type="email"
+          placeholder="Email address"
+          class="w-full px-3 py-2 text-xs bg-zinc-900 border border-zinc-700 outline-none mb-2"
+        />
+        <button class="w-full bg-amber-600 hover:bg-amber-700 text-xs py-2 uppercase tracking-wide">
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <p class="text-[10px] text-zinc-500 text-center mt-6">
+      © 2024 Parinidhi Fashion. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
